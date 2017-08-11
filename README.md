@@ -6,7 +6,7 @@
 
 ## Description
 
-_Epicodus is a vocational school for people who want to be computer progammers. It offers several tracks, each focusing on different languages. This survey asks potential students questions themselves, and matches them with a program based on their responses._
+_Epicodus is a vocational school for people who want to be computer programmers. It offers several tracks, each focusing on different languages. This survey asks potential students questions about themselves, and matches them with a program based on their responses._
 
 ## Setup/Installation Requirements
 
@@ -16,11 +16,11 @@ _Epicodus is a vocational school for people who want to be computer progammers. 
 * _Open HTML, CSS, Bootstrap, JS, and jQuery files in a text editor such as Atom for a closer look at the code._
 * _Click on the HTML file to open the page locally._
 
-_Link TBD_
+_[Track Suggester](https://margaret85.github.io/track-suggester/)_
 
 ## Known Bugs
 
-_There are no known bugs at this time._
+_Some images failed to load with links, so they are saved in directories._
 
 ## Support and contact details
 
