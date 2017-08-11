@@ -1,16 +1,4 @@
-#result {
-  display: none;
-}
-
-#ruby {
-  display: none;
-}
-
-#css {
-  display: none;
-}
-
-#csharp {
+#result #ruby #css #csharp {
   display: none;
 }
 
@@ -20,4 +8,22 @@
 
 h1 {
   text-align: center;
+}
+
+h1, h5, p {
+  color: #646566;
+}
+
+h5 {
+  padding-top: 40px;
+  padding-bottom: 5px;
+}
+
+body {
+  background-color: lightsteelblue;
+  margin: 50px;
+}
+
+img {
+  margin-right: 20px;
 }

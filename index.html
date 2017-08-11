@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="https://course_report_production.s3.amazonaws.com/rich/rich_files/rich_files/1880/s300/epicodus-ico.png" rel="icon">
     <title>Track Suggester</title>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
@@ -9,7 +10,25 @@
   </head>
   <body>
     <div class="container">
-      <h1>Track Suggester</h1>
+      <h1><img src="img/epicback.png" alt="Epicodus logo" height="50" width="100">Track Suggester</h1>
+      <div class="jumbotron">
+        <div id="result">
+          <p><span class="name"></span>, you should study...</p>
+        </div>
+        <div id="ruby">
+          <h2>Ruby/Rails!</h2>
+          <p>Ruby is ideal for building interactive web applications.  It is popular with startups and smaller companies.  Bonus: the Rails framework makes many common tasks easier.</p>
+        </div><!--ruby-->
+        <div id="css">
+          <h2>CSS/Design!</h2>
+          <p>This front-end language allows you to make things look nice, and create an enjoyable experience for the user.</p>
+        </div><!--css-->
+        <div id="csharp">
+          <h2>C#/.NET!</h2>
+          <p>C# is used by bigger, established businesses.  It is an older language, but has lately been revitalized by Microsoft's decision to open source the language and surrounding platform.</p>
+        </div><!--C#-->
+        <button class="btn" id="return">Back to form</button>
+      </div><!--jumbotron-->
       <form id="survey">
         <div class="form-control">
           <label for="name">Your name</label>
@@ -47,23 +66,6 @@
         </select>
         <button type="submit" class="btn">Which track is right for me?</button>
       </form>
-      <div class="jumbotron">
-        <div id="result">
-          <p><span class="name"></span>, you should study...</p>
-        </div>
-        <div id="ruby">
-          <h2>Ruby/Rails!</h2>
-          <p>Ruby is ideal for building interactive web applications.  It is popular with startups and smaller companies.  Bonus: the Rails framework makes many common tasks easier.</p>
-        </div><!--ruby-->
-        <div id="css">
-          <h2>CSS/Design!</h2>
-          <p>This front-end language allows you to spend time making things look nice, and creating an enjoyable experience for the user.</p>
-        </div><!--css-->
-        <div id="csharp">
-          <h2>C#/.NET!</h2>
-          <p>C# is used by bigger, established businesses.  It is an older language, but has lately been revitalized by Microsoft's decision to open source the language and surrounding platform.</p>
-        </div><!--C#-->
-      </div><!--well-->
     </div><!--container-->
   </body>
 </html>

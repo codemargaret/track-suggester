@@ -2,7 +2,6 @@ $(document).ready(function() {
   $("form#survey").submit(function(event) {
   event.preventDefault();
     var name = $("#name").val();
-    console.log("name" + name);
     var design = $("select#design").val();
     var fast = $("select#fast").val();
     var focus = $("select#focus").val();
@@ -10,9 +9,10 @@ $(document).ready(function() {
     var bustype = $("select#bustype").val();
     var mic = $("select#mic").val();
 
+    $("#survey").fadeOut(1500);
+    $(".jumbotron").delay(1500).fadeIn();
     $(".name").text(name);
-    $("#result").show();
-    $(".jumbotron").show();
+    $("#result").show(1500);
 
     if (design === 'yes' && fast === 'no' || design === 'yes' && focus === 'looks' || focus === 'looks' && fast === 'no') {
       $('#css').show();
@@ -25,5 +25,10 @@ $(document).ready(function() {
         $('#csharp').show();
         $("#css,#ruby").hide();
     }
+
+      $("#return").click(function() {
+      $(".jumbotron").fadeOut(1500);
+      $("#survey").fadeIn();
+    });
   });
 });
