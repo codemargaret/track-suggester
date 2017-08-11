@@ -10,7 +10,7 @@ h1 {
   text-align: center;
 }
 
-h1, h5, p {
+h1, h2, h5, p {
   color: #646566;
 }
 
@@ -25,7 +25,8 @@ body {
 }
 
 img {
-  margin-right: 20px;
+  margin-right: 12px;
+  margin-bottom: 8px;
 }
 
 .btn {

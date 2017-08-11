@@ -9,26 +9,32 @@ $(document).ready(function() {
     var bustype = $("select#bustype").val();
     var mic = $("select#mic").val();
 
-    $("#survey").fadeOut(1500);
-    $(".jumbotron").delay(1500).fadeIn();
-    $(".name").text(name);
-    $("#result").show(1500);
+    if (name) {
+    	$("#survey").fadeOut(1500);
+   	  $(".jumbotron").delay(1500).fadeIn();
+    	$(".name").text(name);
+    	$("#result").show(1500);
 
-    if (design === 'yes' && fast === 'no' || design === 'yes' && focus === 'looks' || focus === 'looks' && fast === 'no') {
-      $('#css').show();
-      $("#ruby,#csharp").hide();
-    } else if (size === 'small' && bustype === 'start' || size === 'small' && mic === 'no' || mic === 'no' && size === 'small') {
+      if (design === 'yes' && fast === 'no' || design === 'yes' && focus === 'looks' || 			focus === 'looks' && fast === 'no') {
+        $('#css').show();
+        $("#ruby,#csharp").hide();
+      } else if (size === 'small' && bustype === 'start' || size === 'small' && mic === 			'no' || mic === 'no' && size === 'small') {
         $('#ruby').show();
         $("#css,#csharp").hide();
-    }
-    else {
+      }
+      else {
         $('#csharp').show();
         $("#css,#ruby").hide();
-    }
+      }
 
-      $("#return").click(function() {
-      $(".jumbotron").fadeOut(1500);
-      $("#survey").fadeIn();
+    } else {
+      alert('Please enter your name.');
+    };
+
+
+    $("#return").click(function() {
+    $(".jumbotron").fadeOut(1500);
+    $("#survey").fadeIn(1500);
     });
   });
 });
