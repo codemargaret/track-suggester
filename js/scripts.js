@@ -10,6 +10,7 @@ $(document).ready(function() {
     var bustype = $("select#bustype").val();
     var mic = $("select#mic").val();
 
+    $(".name").text(name);
     $("#result").show();
     $(".jumbotron").show();
 
