@@ -1,12 +1,17 @@
 $(document).ready(function() {
   $("form#survey").submit(function(event) {
   event.preventDefault();
+    var name = $("#name").val();
+    console.log("name" + name);
     var design = $("select#design").val();
     var fast = $("select#fast").val();
     var focus = $("select#focus").val();
     var size = $("select#size").val();
     var bustype = $("select#bustype").val();
     var mic = $("select#mic").val();
+
+    $("#result").show();
+    $(".jumbotron").show();
 
     if (design === 'yes' && fast === 'no' || design === 'yes' && focus === 'looks' || focus === 'looks' && fast === 'no') {
       $('#css').show();

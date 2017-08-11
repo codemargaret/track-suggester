@@ -1,3 +1,7 @@
+#result {
+  display: none;
+}
+
 #ruby {
   display: none;
 }
@@ -7,5 +11,9 @@
 }
 
 #csharp {
+  display: none;
+}
+
+.jumbotron {
   display: none;
 }

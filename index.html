@@ -16,46 +16,54 @@
           <input id="name" type="text" class="form-control">
         </div><!--name-->
         <h5>Do you have an eye for color and design?</h5>
-        <select id="design">
+        <select class="form-control" id="design">
           <option value="yes">Yes</option>
           <option value="no">No</option>
         </select>
         <h5>Do you like to make things work faster and more efficiently?</h5>
-        <select id="fast">
+        <select class="form-control" id="fast">
           <option value="no">No</option>
           <option value="yes">Yes</option>
         </select>
         <h5>Do you prefer to focus on how something looks, or how something works?</h5>
-        <select id="focus">
+        <select class="form-control" id="focus">
           <option value="looks">How it looks</option>
           <option value="works">How it works</option>
         </select>
         <h5>Would you prefer to work for a small or large company?</h5>
-        <select id="size">
+        <select class="form-control" id="size">
           <option value="small">Small</option>
           <option value="large">Large</option>
         </select>
         <h5>Do you see yourself at a startup or a more established business?</h5>
-        <select id="bustype">
+        <select class="form-control" id="bustype">
           <option value="start">Startup</option>
           <option value="est">Established business</option>
         </select>
         <h5>Do you like Microsoft products?</h5>
-        <select id="mic">
+        <select class="form-control" id="mic">
           <option value="no">No</option>
           <option value="yes">Yes</option>
         </select>
         <button type="submit" class="btn">Which track is right for me?</button>
       </form>
-      <div id="ruby">
-        <p>Ruby is ideal for building interactive web applications.  It is popular with startups and smaller companies.  Bonus: the Rails framework makes many common tasks easier.</p>
-      </div><!--ruby-->
-      <div id="css">
-        <p>This front-end language allows you to spend time making things look nice, and creating an enjoyable experience for the user.</p>
-      </div><!--css-->
-      <div id="csharp">
-        <p>C# is used by bigger, established businesses.  It is an older language, but has lately been revitalized by Microsoft's decision to open source the language and surrounding platform.</p>
-      </div><!--C#-->
+      <div class="jumbotron">
+        <div id="result">
+          <p>You should study...</p>
+        </div>
+        <div id="ruby">
+          <h2>Ruby/Rails!</h2>
+          <p>Ruby is ideal for building interactive web applications.  It is popular with startups and smaller companies.  Bonus: the Rails framework makes many common tasks easier.</p>
+        </div><!--ruby-->
+        <div id="css">
+          <h2>CSS/Design!</h2>
+          <p>This front-end language allows you to spend time making things look nice, and creating an enjoyable experience for the user.</p>
+        </div><!--css-->
+        <div id="csharp">
+          <h2>C#/.NET!</h2>
+          <p>C# is used by bigger, established businesses.  It is an older language, but has lately been revitalized by Microsoft's decision to open source the language and surrounding platform.</p>
+        </div><!--C#-->
+      </div><!--well-->
     </div><!--container-->
   </body>
 </html>
