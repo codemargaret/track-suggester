@@ -29,12 +29,12 @@ $(document).ready(function() {
 
     } else {
       alert('Please enter your name.');
-    };
+    }
 
 
     $("#return").click(function() {
-    $(".jumbotron").fadeOut(1500);
-    $("#survey").fadeIn(1500);
+      $(".jumbotron").fadeOut(1500);
+      $("#survey").fadeIn(1500);
     });
   });
 });
