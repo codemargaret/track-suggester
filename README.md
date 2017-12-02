@@ -24,7 +24,9 @@ _Some images failed to load with links, so they are saved in directories._
 
 ## Support and contact details
 
-_If you have issues, questions, ideas, or concerns, please contact Margaret at margaretshelaghmcgovern@gmail.com. Feel free to make a contribution to the code._
+_If you have issues, questions, ideas, or concerns, please contact [Margaret]. Feel free to make a contribution to the code._
+
+[Margaret]: mailto:codeberry1@gmail.com
 
 ## Technologies Used
 
